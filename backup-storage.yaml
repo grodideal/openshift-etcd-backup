@@ -20,7 +20,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: etcd-backup-pvc
 spec:
-  volumeName: etcd-backup-pv
+  volumeName: pv0001
   accessModes:
     - ReadWriteMany
   resources:

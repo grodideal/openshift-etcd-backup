@@ -31,8 +31,6 @@ spec:
               privileged: true
               runAsUser: 0
             volumeMounts:
-            - mountPath: /host
-              name: host
             - name: volume-backup
               mountPath: /backup
           nodeSelector:
@@ -46,10 +44,6 @@ spec:
           restartPolicy: Never
           dnsPolicy: ClusterFirst
           volumes:
-          - hostPath:
-              path: /
-              type: Directory
-            name: host
           - name: volume-backup
             persistentVolumeClaim:
               claimName: test

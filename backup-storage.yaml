@@ -7,7 +7,7 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: topolvm.cybozu.com
+    server: 10.0.88.100
     path: "/etcd-backup"
   capacity:
     storage: 10Gi

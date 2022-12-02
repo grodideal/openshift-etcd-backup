@@ -46,4 +46,4 @@ spec:
           volumes:
           - name: volume-backup
             persistentVolumeClaim:
-              claimName: test
+              claimName: etcd-backup-pvc

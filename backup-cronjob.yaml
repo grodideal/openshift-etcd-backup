@@ -11,9 +11,8 @@ spec:
       template:
         spec:
           containers:
-          - command:
-            - /bin/sh
-            - /usr/local/bin/backup.sh
+          - command: ["/bin/sh"]
+            - args: ["-c", "cd /backup && /usr/local/bin/etcd-snapshot-backup.sh ./assets/backup/$(date +%Y-%m-%d_%H:%M:%S_%Z).db"]
             image: ghcr.io/adfinis/openshift-etcd-backup
             imagePullPolicy: Always
             name: backup-etcd

@@ -52,4 +52,4 @@ spec:
             name: host
           - name: volume-backup
             persistentVolumeClaim:
-              claimName: etcd-backup-pvc
+              claimName: test

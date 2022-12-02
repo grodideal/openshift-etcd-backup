@@ -13,7 +13,7 @@ spec:
           containers:
           - command:
             - /bin/sh
-            - /usr/local/bin/backup.sh
+            - /usr/local/bin/cluster-backup.sh
             image: ghcr.io/adfinis/openshift-etcd-backup
             imagePullPolicy: Always
             name: backup-etcd

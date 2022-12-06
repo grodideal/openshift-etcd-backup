@@ -7,20 +7,20 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: 10.0.88.100
+    server: 10.7.4.11
     path: "/opt/nfs/etcd-backup-pv"
   capacity:
     storage: 10Gi
   claimRef:
     name: etcd-backup-pvc
-    namespace: etcd-backup
+    namespace: ocp-etcd-backup
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: etcd-backup-pvc
 spec:
-  volumeName: pv0001
+  volumeName: etcd-backup-pv
   accessModes:
     - ReadWriteMany
   resources:

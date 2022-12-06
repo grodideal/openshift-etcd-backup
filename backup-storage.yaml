@@ -7,7 +7,7 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: 10.7.4.11
+    storageClassName: netapp
     path: "/opt/nfs/etcd-backup-pv"
   capacity:
     storage: 10Gi

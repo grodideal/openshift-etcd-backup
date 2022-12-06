@@ -8,7 +8,7 @@ spec:
     - ReadWriteMany
   nfs:
     server: 10.0.88.100
-    path: "/opt/nfs/etcd-backup-pv"
+    path: "/home/core/backup"
   capacity:
     storage: 10Gi
   claimRef:

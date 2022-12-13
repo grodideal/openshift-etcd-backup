@@ -10,7 +10,7 @@ spec:
     - ReadWriteMany
   nfs:
     server: 10.7.4.11
-    path: "/etcd-backup"
+    path: "/sfgsandbox/ccm"
   capacity:
     storage: 10Gi
   claimRef:

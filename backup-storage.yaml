@@ -9,8 +9,8 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: 172.17.0.2
-    path: "/opt/nfs/etcd-backup-pv"
+    server: 10.7.4.11
+    path: "/etcd-backup"
   capacity:
     storage: 10Gi
   claimRef:

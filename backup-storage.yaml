@@ -21,6 +21,8 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: etcd-backup-pvc
+  labels:
+    app: openshift-backup
 spec:
   volumeName: etcd-backup-pv
   accessModes:
